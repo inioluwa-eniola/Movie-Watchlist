@@ -10,6 +10,7 @@
     --color-primary-input: rgba(255, 255, 255, 1);
     --color-accent: rgba(195, 195, 195, 1);
     --font-grey: rgba(68, 67, 67, 1);
+    --font-light-grey: rgb(196, 195, 195);
     --font-white: rgba(255, 255, 255, 1);
     --font-black: rgba(0, 0, 0, 1);
 }
@@ -37,6 +38,9 @@ header {
     opacity: 0.7;
 }
 
+.navigation-links {
+    text-decoration: none;
+}
 
 .hero {
     position: absolute;
@@ -124,7 +128,7 @@ input[type=text]:focus {
     letter-spacing: -1px;
 }
 
-.icon-search {
+.icon-and-search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,8 +141,15 @@ i.search-icon {
 }
 
 .movie-container {
-    padding: 50px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
 }
+
+
 
 .poster-img {
     width: 150px;
@@ -147,13 +158,13 @@ i.search-icon {
 
 .movie-poster-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     gap: 40px;
     letter-spacing: -0.5px;
     max-width: 60%;
-    margin: 0px auto;
+    margin: 0 0 40px 0;
 }
 
 .text {
@@ -198,7 +209,7 @@ i.search-icon {
 }
 
 hr {
-    width: 70%;
+    width: 100%;
     margin: 3rem auto;
     border: none;
     height: 2px;
@@ -221,3 +232,61 @@ hr {
     line-break: auto;
 }
 
+
+.film-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+    color: var(--color-accent);
+}
+
+.film-section-text {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.film-icon {
+    font-size: 5rem;
+    margin-top: 5rem
+}
+
+.circle-plus-icon {
+    color: var(--font-grey);
+    
+}
+.circle-plus-icon:focus, .circle-plus-icon:active {
+    color: var(--font-grey);
+
+} 
+
+.empty-watchlist-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 0.5rem;
+}
+
+.empty-watchlist-bottom-section {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-circle-plus-icon {
+    text-decoration: none;
+    color: var(--font-light-grey);
+}
+.big-circle-plus-icon:hover {
+    color: var(--font-grey);
+}
+
+.error-text {
+    color: var(--font-light-grey);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
